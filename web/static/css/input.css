@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-handwritten: "Architects Daughter", cursive;
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+@layer base {
+    body {
+        background-color: #fdfbf7;
+        background-image:
+            linear-gradient(#e5e5f7 1px, transparent 1px),
+            linear-gradient(90deg, #e5e5f7 1px, transparent 1px);
+        background-size: 20px 20px;
+        font-family: var(--font-handwritten);
+        @apply text-slate-700;
+    }
+}
+
+@layer components {
+    .paper-card {
+        @apply bg-white shadow-lg p-6 relative transform transition-transform duration-300 hover:-translate-y-1;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .tape {
+        @apply absolute bg-yellow-100 opacity-80 shadow-sm h-8 w-24;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-2deg);
+        z-index: 10;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+    
+    .tape-corner-tl {
+        @apply absolute bg-yellow-100 opacity-80 shadow-sm h-8 w-24;
+        top: -10px;
+        left: -25px;
+        transform: rotate(-45deg);
+        z-index: 10;
+    }
+
+    .tape-corner-tr {
+        @apply absolute bg-yellow-100 opacity-80 shadow-sm h-8 w-24;
+        top: -10px;
+        right: -25px;
+        transform: rotate(45deg);
+        z-index: 10;
+    }
+    
+    .btn-sketch {
+        @apply border-2 border-slate-700 px-6 py-2 bg-transparent hover:bg-slate-100 transition-colors uppercase tracking-widest font-bold;
+        border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    }
+}
