@@ -1,4 +1,214 @@
 {{ define "content" }}
-<h1 class="text-3xl font-bold mb-4">Experience</h1>
-<p>Lorem ipsum dolor sit amet...</p>
+<div class="py-16 flex flex-col items-center gap-24 w-full max-w-4xl mx-auto">
+  
+  <!-- Header & Resume Download -->
+  <div class="flex flex-col sm:flex-row items-center justify-between w-full px-4">
+    <h1 class="text-5xl font-bold underline decoration-red-400 decoration-2 underline-offset-8 mb-8 sm:mb-0">
+      Experience
+    </h1>
+    <a href="/static/pdf/BlakeSalbilla_Resume.pdf" target="_blank" class="btn-sketch flex items-center gap-2 text-xl font-bold tracking-wide">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+      DOWNLOAD RESUME
+    </a>
+  </div>
+
+  <!-- Skills / Toolkit Section -->
+  <section class="w-full px-4">
+    <div class="paper-card rotate-1 w-full">
+      <div class="tape scale-110"></div>
+      <h2 class="text-3xl font-bold mb-6 underline decoration-red-400 decoration-2 underline-offset-8">My Toolkit</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg">
+        <div>
+          <h3 class="font-bold underline decoration-slate-300 decoration-2 underline-offset-4 mb-2">Languages</h3>
+          <p>Go, Java, Python, C++, SQL, HTML/CSS</p>
+        </div>
+        <div>
+          <h3 class="font-bold underline decoration-slate-300 decoration-2 underline-offset-4 mb-2">Frameworks</h3>
+          <p>HTMX, Bootstrap, Tailwind CSS</p>
+        </div>
+        <div class="md:col-span-2">
+          <h3 class="font-bold underline decoration-slate-300 decoration-2 underline-offset-4 mb-2">Tools & Platforms</h3>
+          <p>Git, Docker, Vim, Linux, Google Cloud Platform (GCP), AWS, Gemini CLI</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section class="w-full px-4 flex flex-col items-center gap-12">
+    <h2 class="text-4xl font-bold underline decoration-red-400 decoration-2 underline-offset-8 text-center">Where I've Worked</h2>
+    
+    <div class="space-y-12 w-full">
+      <!-- Illinois Business Consulting -->
+      <div class="paper-card rotate-1 w-full relative">
+        <div class="tape scale-110"></div>
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+          <h3 class="text-2xl font-bold">Consultant</h3>
+          <span class="text-slate-500 font-bold italic">February 2026 – Present</span>
+        </div>
+        
+        <h4 class="text-lg font-bold text-slate-600 mb-3">Illinois Business Consulting</h4>
+        
+        <ul class="space-y-3 list-none pl-2 text-lg">
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Collaborate on student-led consulting projects to solve complex business problems for various clients.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Utilize analytical skills and teamwork to deliver high-quality strategic recommendations.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Freelance Developer -->
+      <div class="paper-card -rotate-1 w-full relative">
+        <div class="tape-corner-tl"></div>
+        <div class="tape-corner-tr"></div>
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+          <h3 class="text-2xl font-bold">Freelance Developer</h3>
+          <span class="text-slate-500 font-bold italic">July 2025 – December 2025</span>
+        </div>
+        
+        <ul class="space-y-3 list-none pl-2 text-lg">
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Deliver web apps and automation tools for clients using Go, HTMX, Bootstrap, and Google Cloud Platform.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Collaborate with clients to scope projects, define requirements, and manage timelines.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Shift Lead, Duck Donuts -->
+      <div class="paper-card rotate-1 w-full relative">
+        <div class="tape scale-110"></div>
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+          <h3 class="text-2xl font-bold">Shift Lead <span class="text-xl font-normal italic text-slate-600">(Promoted from Team Member)</span></h3>
+          <span class="text-slate-500 font-bold italic">Mar 2022 – Aug 2025</span>
+        </div>
+        
+        <h4 class="text-lg font-bold text-slate-600 mb-3">Duck Donuts</h4>
+        
+        <ul class="space-y-3 list-none pl-2 text-lg">
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Supervised daily store operations, ensuring high-quality service and adherence to company standards.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Led closing shifts of 4 team members, delegating tasks effectively.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Reduced average closing time by 87% by developing a more streamlined closing process.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="w-full px-4 flex flex-col items-center gap-12">
+    <h2 class="text-4xl font-bold underline decoration-red-400 decoration-2 underline-offset-8 text-center">Things I've Built</h2>
+    
+    <div class="space-y-12 w-full">
+      <!-- LaundryLink -->
+      <div class="paper-card -rotate-1 w-full relative group">
+        <div class="tape scale-110"></div>
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 relative z-20 pt-4">
+          <h3 class="text-2xl font-bold flex items-center gap-3">
+            LaundryLink
+            <a href="https://laundrylinkuiuc.com" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors">
+              <svg class="w-5 h-5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </h3>
+          <span class="text-slate-500 font-bold italic mt-2 sm:mt-0 text-right">Go, SQLite, HTMX, Auth0, Stripe</span>
+        </div>
+        
+        <p class="mb-4 text-slate-600 italic">Full-stack platform providing peer-to-peer laundry services hosted on a remote Linux server.</p>
+        
+        <ul class="space-y-3 list-none pl-2 text-lg">
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Engineered a scalable and reliable backend to manage customer orders, worker scheduling, and automated email notifications.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Streamlined user onboarding and monetization by integrating Auth0 for identity management and Stripe for PCI-compliant payment processing.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Utilized Generative AI to iterate on brand identity, value propositions, and automate marketing.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Chadscrap -->
+      <div class="paper-card rotate-1 w-full relative">
+        <div class="tape-corner-tl"></div>
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 relative z-20 pt-4">
+          <h3 class="text-2xl font-bold flex items-center gap-3">
+            Chadscrap
+            <a href="https://chadscrap.com" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors">
+              <svg class="w-5 h-5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </h3>
+          <span class="text-slate-500 font-bold italic mt-2 sm:mt-0 text-right">Go, HTMX, Bootstrap, GCP</span>
+        </div>
+        
+        <p class="mb-4 text-slate-600 italic">Full-stack client portfolio website with a dynamic admin dashboard.</p>
+        
+        <ul class="space-y-3 list-none pl-2 text-lg">
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Delivered live content updates from Cloud Storage with zero downtime.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Reduced client's server costs by over 99%.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Email Automator Apps -->
+      <div class="paper-card -rotate-1 w-full relative group">
+        <div class="tape scale-110"></div>
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 relative z-20 pt-4">
+          <h3 class="text-2xl font-bold flex items-center gap-3">
+            Email Automator Apps
+            <a href="https://github.com/bsalbilla06" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors">
+              <svg class="w-5 h-5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+            </a>
+          </h3>
+          <span class="text-slate-500 font-bold italic mt-2 sm:mt-0 text-right">Go, SMTP, GCP</span>
+        </div>
+        
+        <p class="mb-4 text-slate-600 italic">Automated email workflows using cron jobs.</p>
+        
+        <ul class="space-y-3 list-none pl-2 text-lg">
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Sent 500+ templated emails with zero delivery errors during testing.</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-3 text-slate-400 text-2xl">•</span>
+            <span>Reduced manual scheduling time by 90%.</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+</div>
 {{ end }}
