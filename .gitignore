@@ -1,9 +1,2 @@
-
-# Environment variables
-.env
-
-# Binary files
-bin/
-
 # Generated CSS
-web/static/css/output.css
+static/css/output.css

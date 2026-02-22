@@ -1,14 +1,12 @@
-.PHONY: build run css clean
+.PHONY: build css clean run
 
 build: css
-	go build -o bin/server cmd/server/main.go
 
-run: css
-	go run cmd/server/main.go
+run:
+	python3 -m http.server 8000
 
 css:
-	tailwindcss -i ./web/static/css/input.css -o ./web/static/css/output.css --minify
+	tailwindcss -i ./static/css/input.css -o ./static/css/output.css --minify
 
 clean:
-	rm -rf bin/
-	rm -f web/static/css/output.css
+	rm -f static/css/output.css

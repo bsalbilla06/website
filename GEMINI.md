@@ -6,10 +6,10 @@ Your task is to create my personal website, bsalbilla06.com.
 
 ## General Instructions
 
-- You should use the GoTH tech stack: Go, Tailwind CSS, and HTMX. Follow standard coding styles.
-- Prefer standard library implementations when they make sense.
-- App deployment will be on AWS, using EC2, RDS, S3, and Cognito for the server, database, object storage, and authentication (if needed) respectively. The application should build into a Docker container for deployment.
-- Follow the standard project structure outlined in https://github.com/golang-standards/project-layout
+- This is a static website built with Tailwind CSS.
+- App deployment is on GitHub Pages.
+- The website is composed of standalone HTML files (index.html, about.html, experience.html, connect.html).
+- Assets are located in the `/static` directory.
 
 ## Style
 
@@ -28,5 +28,4 @@ Your task is to create my personal website, bsalbilla06.com.
 ## Development Rules
 
 - Do not hallucinate. If you are ever questionable about something, ask me for clarification of the task or look up documentation
-- Never hardcode API keys. Use `os.Getenv()` when you need an API key or sensitive information
 - Follow the Principle of Least Privilege when creating or interacting with any service
