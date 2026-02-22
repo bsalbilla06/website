@@ -1,4 +1,96 @@
 {{ define "content" }}
-<h1 class="text-3xl font-bold mb-4">Contact</h1>
-<p>Lorem ipsum dolor sit amet...</p>
+<div class="py-24 flex flex-col items-center gap-24 w-full max-w-4xl mx-auto">
+
+    <!-- Professional Business Card -->
+    <section class="flex justify-center w-full px-4">
+        <div class="w-full max-w-md shadow-2xl p-8 border border-slate-300 flex flex-col items-center text-center justify-center aspect-[1.75/1] relative group hover:shadow-3xl transition-shadow duration-500" style="background-color: #ffffff; font-family: 'Times New Roman', Times, serif; opacity: 1;">
+            <div class="mb-6">
+                <h1 class="text-4xl font-bold tracking-tight text-slate-900 mb-1 italic">Blake Salbilla</h1>
+                <p class="text-xs uppercase tracking-[0.2em] text-slate-600 font-medium">Student & Software Developer</p>
+            </div>
+            
+            <div class="space-y-3 border-t border-slate-200 pt-6 text-sm w-full">
+                <div class="flex justify-center items-center gap-3 text-slate-800">
+                    <span class="font-bold tracking-widest uppercase text-[10px] text-slate-400">EMAIL</span>
+                    <a href="mailto:blake.salbilla@gmail.com" class="hover:text-blue-600 transition-colors">blake.salbilla@gmail.com</a>
+                </div>
+                <div class="flex justify-center items-center gap-3 text-slate-800">
+                    <span class="font-bold tracking-widest uppercase text-[10px] text-slate-400">PHONE</span>
+                    <a href="tel:+18472042359" class="hover:text-blue-600 transition-colors">+1 (847) 204-2359</a>
+                </div>
+                <div class="flex justify-center items-center gap-3 text-slate-800">
+                    <span class="font-bold tracking-widest uppercase text-[10px] text-slate-400">WEB</span>
+                    <a href="https://bsalbilla06.com" class="hover:text-blue-600 transition-colors">bsalbilla06.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Socials Card -->
+    <section class="max-w-2xl w-full px-4">
+        <div class="paper-card rotate-1 w-full">
+            <div class="tape scale-110"></div>
+            <h2 class="text-4xl font-bold mb-8 underline decoration-red-400 decoration-2 underline-offset-8 text-center">Find Me Online</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10 px-4">
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/blake-salbilla-0543a8381/" target="_blank" class="group flex items-center gap-4 transition-colors">
+                    <div class="w-8 h-8 bg-slate-400 group-hover:bg-black transition-colors flex-shrink-0" style="-webkit-mask-image: url('/static/icons/linkedin.svg'); mask-image: url('/static/icons/linkedin.svg'); -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center;"></div>
+                    <div class="flex flex-col">
+                        <span class="font-bold uppercase tracking-widest text-xs text-slate-400 mb-0.5">LinkedIn</span>
+                        <span class="text-2xl font-bold group-hover:text-slate-900 transition-colors">blake-salbilla</span>
+                    </div>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://www.github.com/bsalbilla06" target="_blank" class="group flex items-center gap-4 transition-colors">
+                    <div class="w-8 h-8 bg-slate-400 group-hover:bg-black transition-colors flex-shrink-0" style="-webkit-mask-image: url('/static/icons/github.svg'); mask-image: url('/static/icons/github.svg'); -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center;"></div>
+                    <div class="flex flex-col">
+                        <span class="font-bold uppercase tracking-widest text-xs text-slate-400 mb-0.5">GitHub</span>
+                        <span class="text-2xl font-bold group-hover:text-slate-900 transition-colors">bsalbilla06</span>
+                    </div>
+                </a>
+                
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/bsalbilla06/" target="_blank" class="group flex items-center gap-4 transition-colors">
+                    <div class="w-8 h-8 bg-slate-400 group-hover:bg-black transition-colors flex-shrink-0" style="-webkit-mask-image: url('/static/icons/instagram.svg'); mask-image: url('/static/icons/instagram.svg'); -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center;"></div>
+                    <div class="flex flex-col">
+                        <span class="font-bold uppercase tracking-widest text-xs text-slate-400 mb-0.5">Instagram</span>
+                        <span class="text-2xl font-bold group-hover:text-slate-900 transition-colors">bsalbilla06</span>
+                    </div>
+                </a>
+
+                <!-- X (Twitter) -->
+                <a href="https://www.x.com/bsalbilla06" target="_blank" class="group flex items-center gap-4 transition-colors">
+                    <div class="w-8 h-8 bg-slate-400 group-hover:bg-black transition-colors flex-shrink-0" style="-webkit-mask-image: url('/static/icons/x.svg'); mask-image: url('/static/icons/x.svg'); -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center;"></div>
+                    <div class="flex flex-col">
+                        <span class="font-bold uppercase tracking-widest text-xs text-slate-400 mb-1">X (Twitter)</span>
+                        <span class="text-2xl font-bold group-hover:text-slate-900 transition-colors">bsalbilla06</span>
+                    </div>
+                </a>
+
+                <!-- Threads -->
+                <a href="https://www.threads.com/@bsalbilla06" target="_blank" class="group flex items-center gap-4 transition-colors">
+                    <div class="w-8 h-8 bg-slate-400 group-hover:bg-black transition-colors flex-shrink-0" style="-webkit-mask-image: url('/static/icons/threads.svg'); mask-image: url('/static/icons/threads.svg'); -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center;"></div>
+                    <div class="flex flex-col">
+                        <span class="font-bold uppercase tracking-widest text-xs text-slate-400 mb-0.5">Threads</span>
+                        <span class="text-2xl font-bold group-hover:text-slate-900 transition-colors">bsalbilla06</span>
+                    </div>
+                </a>
+
+                <!-- Strava -->
+                <a href="https://www.strava.com/athletes/bsalbilla06" target="_blank" class="group flex items-center gap-4 transition-colors">
+                    <div class="w-8 h-8 bg-slate-400 group-hover:bg-black transition-colors flex-shrink-0" style="-webkit-mask-image: url('/static/icons/strava.svg'); mask-image: url('/static/icons/strava.svg'); -webkit-mask-size: contain; mask-size: contain; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; -webkit-mask-position: center; mask-position: center;"></div>
+                    <div class="flex flex-col">
+                        <span class="font-bold uppercase tracking-widest text-xs text-slate-400 mb-0.5">Strava</span>
+                        <span class="text-2xl font-bold group-hover:text-slate-900 transition-colors">bsalbilla06</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+</div>
 {{ end }}
