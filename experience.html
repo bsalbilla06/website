@@ -1,276 +1,495 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Experience - bsalbilla06.com</title>
-    <link href="static/css/output.css" rel="stylesheet">
+    <link href="static/css/output.css" rel="stylesheet" />
     <script src="https://unpkg.com/htmx.org@1.9.10"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-</head>
-<body class="text-slate-800 min-h-screen flex flex-col font-handwritten">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="text-slate-800 min-h-screen flex flex-col font-handwritten">
     <!-- Navbar -->
     <header class="px-4 py-6 relative z-50">
-        <nav class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6 sm:gap-0">
-            <!-- Logo / Brand -->
-            <a href="index.html" class="text-3xl font-bold hover:text-slate-600 transition-colors">
-                BS
-            </a>
+      <nav
+        class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-0"
+      >
+        <!-- Navigation Links -->
+        <div
+          class="grid grid-cols-2 place-items-center gap-y-4 gap-x-4 sm:flex sm:justify-center sm:gap-x-8 text-xl font-bold tracking-wide relative w-full sm:w-auto mt-2 sm:mt-0"
+        >
+          <!-- Home Link -->
+          <div class="relative group">
+            <a
+              href="index.html"
+              class="hover:text-slate-600 transition-colors px-4 py-2 relative z-10"
+              >HOME</a
+            >
+          </div>
 
-            <!-- Navigation Links -->
-            <div class="grid grid-cols-2 place-items-center gap-y-4 gap-x-4 sm:flex sm:justify-center sm:gap-x-8 text-xl font-bold tracking-wide relative w-full sm:w-auto mt-2 sm:mt-0">
-                <!-- Home Link -->
-                <div class="relative group">
-                    <a href="index.html" class="hover:text-slate-600 transition-colors px-4 py-2 relative z-10">HOME</a>
-                </div>
+          <!-- About Link -->
+          <div class="relative group">
+            <a
+              href="about.html"
+              class="hover:text-slate-600 transition-colors px-4 py-2 relative z-10"
+              >ABOUT</a
+            >
+          </div>
 
-                <!-- About Link -->
-                <div class="relative group">
-                    <a href="about.html" class="hover:text-slate-600 transition-colors px-4 py-2 relative z-10">ABOUT</a>
-                </div>
+          <!-- Experience Link -->
+          <div class="relative group">
+            <a
+              href="experience.html"
+              class="hover:text-slate-600 transition-colors px-4 py-2 relative z-10"
+              >EXPERIENCE</a
+            >
+            <svg
+              class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-44 h-14 pointer-events-none z-0 overflow-visible"
+              viewBox="-5 -5 180 60"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M5,25 Q45,5 85,5 T165,25 T85,45 Q45,45 25,35"
+                fill="none"
+                stroke="#ef4444"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="
+                  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+                  opacity: 0.8;
+                  stroke-dasharray: 400;
+                  stroke-dashoffset: 0;
+                "
+              >
+                <animate
+                  attributeName="stroke-dashoffset"
+                  from="400"
+                  to="0"
+                  dur="1.0s"
+                  fill="freeze"
+                />
+              </path>
+            </svg>
+          </div>
 
-                <!-- Experience Link -->
-                <div class="relative group">
-                    <a href="experience.html" class="hover:text-slate-600 transition-colors px-4 py-2 relative z-10">EXPERIENCE</a>
-                    <svg class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-14 pointer-events-none z-0 overflow-visible" viewBox="-5 -5 110 60" preserveAspectRatio="none">
-                        <path d="M5,25 Q25,5 50,5 T95,25 T50,45 T5,25" fill="none" stroke="#ef4444" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.2)); opacity: 0.8; stroke-dasharray: 200; stroke-dashoffset: 0;">
-                            <animate attributeName="stroke-dashoffset" from="200" to="0" dur="0.8s" fill="freeze" />
-                        </path>
-                    </svg>
-                </div>
-
-                <!-- Contact Link -->
-                <div class="relative group">
-                    <a href="connect.html" class="hover:text-slate-600 transition-colors px-4 py-2 relative z-10">CONNECT</a>
-                </div>
-            </div>
-        </nav>
+          <!-- Contact Link -->
+          <div class="relative group">
+            <a
+              href="connect.html"
+              class="hover:text-slate-600 transition-colors px-4 py-2 relative z-10"
+              >CONNECT</a
+            >
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Main Content -->
     <main class="flex-grow max-w-6xl mx-auto px-4 relative w-full">
-<div class="py-16 flex flex-col items-center gap-24 w-full max-w-4xl mx-auto">
-  
-  <!-- Header & Resume Download -->
-  <div class="flex flex-col sm:flex-row items-center justify-between w-full px-4">
-    <h1 class="text-5xl font-bold underline decoration-red-400 decoration-2 underline-offset-8 mb-8 sm:mb-0">
-      Experience
-    </h1>
-    <a href="static/pdf/BlakeSalbilla_Resume.pdf" target="_blank" class="btn-sketch flex items-center gap-2 text-xl font-bold tracking-wide">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-      DOWNLOAD RESUME
-    </a>
-  </div>
+      <div
+        class="py-16 flex flex-col items-center gap-24 w-full max-w-4xl mx-auto"
+      >
+        <!-- Header & Resume Download -->
+        <div
+          class="flex flex-col sm:flex-row items-center justify-between w-full px-4"
+        >
+          <h1
+            class="text-5xl font-bold underline decoration-red-400 decoration-2 underline-offset-8 mb-8 sm:mb-0"
+          >
+            Experience
+          </h1>
+          <a
+            href="static/pdf/BlakeSalbilla_Resume.pdf"
+            target="_blank"
+            class="btn-sketch flex items-center gap-2 text-xl font-bold tracking-wide"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              ></path>
+            </svg>
+            DOWNLOAD RESUME
+          </a>
+        </div>
 
-  <!-- Skills / Toolkit Section -->
-  <section class="w-full px-4">
-    <div class="paper-card rotate-1 w-full">
-      <div class="tape scale-110"></div>
-      <h2 class="text-3xl font-bold mb-6 underline decoration-red-400 decoration-2 underline-offset-8">My Toolkit</h2>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg">
-        <div>
-          <h3 class="font-bold underline decoration-slate-300 decoration-2 underline-offset-4 mb-2">Languages</h3>
-          <p>Go, Java, Python, C++, SQL, HTML/CSS</p>
-        </div>
-        <div>
-          <h3 class="font-bold underline decoration-slate-300 decoration-2 underline-offset-4 mb-2">Frameworks</h3>
-          <p>HTMX, Bootstrap, Tailwind CSS</p>
-        </div>
-        <div class="md:col-span-2">
-          <h3 class="font-bold underline decoration-slate-300 decoration-2 underline-offset-4 mb-2">Tools & Platforms</h3>
-          <p>Git, Docker, Vim, Linux, Google Cloud Platform (GCP), AWS, Gemini CLI</p>
-        </div>
+        <!-- Skills / Toolkit Section -->
+        <section class="w-full px-4">
+          <div class="paper-card rotate-1 w-full">
+            <div class="tape scale-110"></div>
+            <h2
+              class="text-3xl font-bold mb-6 underline decoration-red-400 decoration-2 underline-offset-8"
+            >
+              My Toolkit
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg">
+              <div>
+                <h3
+                  class="font-bold underline decoration-slate-300 decoration-2 underline-offset-4 mb-2"
+                >
+                  Languages
+                </h3>
+                <p>Go, Java, Python, C++, SQL, HTML/CSS</p>
+              </div>
+              <div>
+                <h3
+                  class="font-bold underline decoration-slate-300 decoration-2 underline-offset-4 mb-2"
+                >
+                  Frameworks
+                </h3>
+                <p>HTMX, Bootstrap, Tailwind CSS</p>
+              </div>
+              <div class="md:col-span-2">
+                <h3
+                  class="font-bold underline decoration-slate-300 decoration-2 underline-offset-4 mb-2"
+                >
+                  Tools & Platforms
+                </h3>
+                <p>
+                  Git, Docker, Vim, Linux, Google Cloud Platform (GCP), AWS,
+                  Gemini CLI
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="w-full px-4 flex flex-col items-center gap-12">
+          <h2
+            class="text-4xl font-bold underline decoration-red-400 decoration-2 underline-offset-8 text-center"
+          >
+            Where I've Worked
+          </h2>
+
+          <div class="space-y-12 w-full">
+            <!-- Illinois Business Consulting -->
+            <div class="paper-card rotate-1 w-full relative">
+              <div class="tape scale-110"></div>
+
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between mb-4"
+              >
+                <h3 class="text-2xl font-bold">Consultant</h3>
+                <span class="text-slate-500 font-bold italic"
+                  >February 2026 – Present</span
+                >
+              </div>
+
+              <h4 class="text-lg font-bold text-slate-600 mb-3">
+                Illinois Business Consulting
+              </h4>
+
+              <ul class="space-y-3 list-none pl-2 text-lg">
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Collaborate on student-led consulting projects to solve
+                    complex business problems for various clients.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Utilize analytical skills and teamwork to deliver
+                    high-quality strategic recommendations.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Freelance Developer -->
+            <div class="paper-card -rotate-1 w-full relative">
+              <div class="tape-corner-tl"></div>
+              <div class="tape-corner-tr"></div>
+
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between mb-4"
+              >
+                <h3 class="text-2xl font-bold">Freelance Developer</h3>
+                <span class="text-slate-500 font-bold italic"
+                  >July 2025 – December 2025</span
+                >
+              </div>
+
+              <ul class="space-y-3 list-none pl-2 text-lg">
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Deliver web apps and automation tools for clients using Go,
+                    HTMX, Bootstrap, and Google Cloud Platform.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Collaborate with clients to scope projects, define
+                    requirements, and manage timelines.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Shift Lead, Duck Donuts -->
+            <div class="paper-card rotate-1 w-full relative">
+              <div class="tape scale-110"></div>
+
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between mb-4"
+              >
+                <h3 class="text-2xl font-bold">
+                  Shift Lead
+                  <span class="text-xl font-normal italic text-slate-600"
+                    >(Promoted from Team Member)</span
+                  >
+                </h3>
+                <span class="text-slate-500 font-bold italic"
+                  >Mar 2022 – Aug 2025</span
+                >
+              </div>
+
+              <h4 class="text-lg font-bold text-slate-600 mb-3">Duck Donuts</h4>
+
+              <ul class="space-y-3 list-none pl-2 text-lg">
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Supervised daily store operations, ensuring high-quality
+                    service and adherence to company standards.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Led closing shifts of 4 team members, delegating tasks
+                    effectively.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Reduced average closing time by 87% by developing a more
+                    streamlined closing process.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="w-full px-4 flex flex-col items-center gap-12">
+          <h2
+            class="text-4xl font-bold underline decoration-red-400 decoration-2 underline-offset-8 text-center"
+          >
+            Things I've Built
+          </h2>
+
+          <div class="space-y-12 w-full">
+            <!-- LaundryLink -->
+            <div class="paper-card -rotate-1 w-full relative group">
+              <div class="tape scale-110"></div>
+
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 relative z-20 pt-4"
+              >
+                <h3 class="text-2xl font-bold flex items-center gap-3">
+                  LaundryLink
+                  <a
+                    href="https://laundrylinkuiuc.com"
+                    target="_blank"
+                    class="text-blue-500 hover:text-blue-700 transition-colors"
+                  >
+                    <svg
+                      class="w-5 h-5 inline"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      ></path>
+                    </svg>
+                  </a>
+                </h3>
+                <span
+                  class="text-slate-500 font-bold italic mt-2 sm:mt-0 text-right"
+                  >Go, SQLite, HTMX, Auth0, Stripe</span
+                >
+              </div>
+
+              <p class="mb-4 text-slate-600 italic">
+                Full-stack platform providing peer-to-peer laundry services
+                hosted on a remote Linux server.
+              </p>
+
+              <ul class="space-y-3 list-none pl-2 text-lg">
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Engineered a scalable and reliable backend to manage
+                    customer orders, worker scheduling, and automated email
+                    notifications.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Streamlined user onboarding and monetization by integrating
+                    Auth0 for identity management and Stripe for PCI-compliant
+                    payment processing.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Utilized Generative AI to iterate on brand identity, value
+                    propositions, and automate marketing.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Chadscrap -->
+            <div class="paper-card rotate-1 w-full relative">
+              <div class="tape-corner-tl"></div>
+
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 relative z-20 pt-4"
+              >
+                <h3 class="text-2xl font-bold flex items-center gap-3">
+                  Chadscrap
+                  <a
+                    href="https://chadscrap.com"
+                    target="_blank"
+                    class="text-blue-500 hover:text-blue-700 transition-colors"
+                  >
+                    <svg
+                      class="w-5 h-5 inline"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      ></path>
+                    </svg>
+                  </a>
+                </h3>
+                <span
+                  class="text-slate-500 font-bold italic mt-2 sm:mt-0 text-right"
+                  >Go, HTMX, Bootstrap, GCP</span
+                >
+              </div>
+
+              <p class="mb-4 text-slate-600 italic">
+                Full-stack client portfolio website with a dynamic admin
+                dashboard.
+              </p>
+
+              <ul class="space-y-3 list-none pl-2 text-lg">
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Delivered live content updates from Cloud Storage with zero
+                    downtime.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span>Reduced client's server costs by over 99%.</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Email Automator Apps -->
+            <div class="paper-card -rotate-1 w-full relative group">
+              <div class="tape scale-110"></div>
+
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 relative z-20 pt-4"
+              >
+                <h3 class="text-2xl font-bold flex items-center gap-3">
+                  Email Automator Apps
+                  <a
+                    href="https://github.com/bsalbilla06"
+                    target="_blank"
+                    class="text-blue-500 hover:text-blue-700 transition-colors"
+                  >
+                    <svg
+                      class="w-5 h-5 inline"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      ></path>
+                    </svg>
+                  </a>
+                </h3>
+                <span
+                  class="text-slate-500 font-bold italic mt-2 sm:mt-0 text-right"
+                  >Go, SMTP, GCP</span
+                >
+              </div>
+
+              <p class="mb-4 text-slate-600 italic">
+                Automated email workflows using cron jobs.
+              </p>
+
+              <ul class="space-y-3 list-none pl-2 text-lg">
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Sent 500+ templated emails with zero delivery errors during
+                    testing.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span>Reduced manual scheduling time by 90%.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
-  </section>
-
-  <!-- Work Experience Section -->
-  <section class="w-full px-4 flex flex-col items-center gap-12">
-    <h2 class="text-4xl font-bold underline decoration-red-400 decoration-2 underline-offset-8 text-center">Where I've Worked</h2>
-    
-    <div class="space-y-12 w-full">
-      <!-- Illinois Business Consulting -->
-      <div class="paper-card rotate-1 w-full relative">
-        <div class="tape scale-110"></div>
-        
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
-          <h3 class="text-2xl font-bold">Consultant</h3>
-          <span class="text-slate-500 font-bold italic">February 2026 – Present</span>
-        </div>
-        
-        <h4 class="text-lg font-bold text-slate-600 mb-3">Illinois Business Consulting</h4>
-        
-        <ul class="space-y-3 list-none pl-2 text-lg">
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Collaborate on student-led consulting projects to solve complex business problems for various clients.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Utilize analytical skills and teamwork to deliver high-quality strategic recommendations.</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Freelance Developer -->
-      <div class="paper-card -rotate-1 w-full relative">
-        <div class="tape-corner-tl"></div>
-        <div class="tape-corner-tr"></div>
-        
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
-          <h3 class="text-2xl font-bold">Freelance Developer</h3>
-          <span class="text-slate-500 font-bold italic">July 2025 – December 2025</span>
-        </div>
-        
-        <ul class="space-y-3 list-none pl-2 text-lg">
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Deliver web apps and automation tools for clients using Go, HTMX, Bootstrap, and Google Cloud Platform.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Collaborate with clients to scope projects, define requirements, and manage timelines.</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Shift Lead, Duck Donuts -->
-      <div class="paper-card rotate-1 w-full relative">
-        <div class="tape scale-110"></div>
-        
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
-          <h3 class="text-2xl font-bold">Shift Lead <span class="text-xl font-normal italic text-slate-600">(Promoted from Team Member)</span></h3>
-          <span class="text-slate-500 font-bold italic">Mar 2022 – Aug 2025</span>
-        </div>
-        
-        <h4 class="text-lg font-bold text-slate-600 mb-3">Duck Donuts</h4>
-        
-        <ul class="space-y-3 list-none pl-2 text-lg">
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Supervised daily store operations, ensuring high-quality service and adherence to company standards.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Led closing shifts of 4 team members, delegating tasks effectively.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Reduced average closing time by 87% by developing a more streamlined closing process.</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="w-full px-4 flex flex-col items-center gap-12">
-    <h2 class="text-4xl font-bold underline decoration-red-400 decoration-2 underline-offset-8 text-center">Things I've Built</h2>
-    
-    <div class="space-y-12 w-full">
-      <!-- LaundryLink -->
-      <div class="paper-card -rotate-1 w-full relative group">
-        <div class="tape scale-110"></div>
-        
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 relative z-20 pt-4">
-          <h3 class="text-2xl font-bold flex items-center gap-3">
-            LaundryLink
-            <a href="https://laundrylinkuiuc.com" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors">
-              <svg class="w-5 h-5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </a>
-          </h3>
-          <span class="text-slate-500 font-bold italic mt-2 sm:mt-0 text-right">Go, SQLite, HTMX, Auth0, Stripe</span>
-        </div>
-        
-        <p class="mb-4 text-slate-600 italic">Full-stack platform providing peer-to-peer laundry services hosted on a remote Linux server.</p>
-        
-        <ul class="space-y-3 list-none pl-2 text-lg">
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Engineered a scalable and reliable backend to manage customer orders, worker scheduling, and automated email notifications.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Streamlined user onboarding and monetization by integrating Auth0 for identity management and Stripe for PCI-compliant payment processing.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Utilized Generative AI to iterate on brand identity, value propositions, and automate marketing.</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Chadscrap -->
-      <div class="paper-card rotate-1 w-full relative">
-        <div class="tape-corner-tl"></div>
-        
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 relative z-20 pt-4">
-          <h3 class="text-2xl font-bold flex items-center gap-3">
-            Chadscrap
-            <a href="https://chadscrap.com" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors">
-              <svg class="w-5 h-5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </a>
-          </h3>
-          <span class="text-slate-500 font-bold italic mt-2 sm:mt-0 text-right">Go, HTMX, Bootstrap, GCP</span>
-        </div>
-        
-        <p class="mb-4 text-slate-600 italic">Full-stack client portfolio website with a dynamic admin dashboard.</p>
-        
-        <ul class="space-y-3 list-none pl-2 text-lg">
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Delivered live content updates from Cloud Storage with zero downtime.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Reduced client's server costs by over 99%.</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Email Automator Apps -->
-      <div class="paper-card -rotate-1 w-full relative group">
-        <div class="tape scale-110"></div>
-        
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 relative z-20 pt-4">
-          <h3 class="text-2xl font-bold flex items-center gap-3">
-            Email Automator Apps
-            <a href="https://github.com/bsalbilla06" target="_blank" class="text-blue-500 hover:text-blue-700 transition-colors">
-              <svg class="w-5 h-5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-            </a>
-          </h3>
-          <span class="text-slate-500 font-bold italic mt-2 sm:mt-0 text-right">Go, SMTP, GCP</span>
-        </div>
-        
-        <p class="mb-4 text-slate-600 italic">Automated email workflows using cron jobs.</p>
-        
-        <ul class="space-y-3 list-none pl-2 text-lg">
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Sent 500+ templated emails with zero delivery errors during testing.</span>
-          </li>
-          <li class="flex items-start">
-            <span class="mr-3 text-slate-400 text-2xl">•</span>
-            <span>Reduced manual scheduling time by 90%.</span>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-</div>
     </main>
 
     <!-- Footer -->
     <footer class="p-8 text-center text-sm text-slate-500 mt-12 relative">
-        <div class="absolute top-0 left-0 w-full border-t border-slate-300 opacity-50 border-dashed"></div>
-        <p>&copy; 2026 Blake Salbilla.</p>
+      <div
+        class="absolute top-0 left-0 w-full border-t border-slate-300 opacity-50 border-dashed"
+      ></div>
+      <p>&copy; 2026 Blake Salbilla.</p>
     </footer>
-
-</body>
+  </body>
 </html>
