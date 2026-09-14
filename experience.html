@@ -215,7 +215,7 @@
                   Technologies & Systems
                 </h3>
                 <p>
-                  Proxmox VE, Ollama, Portainer, OpenMediaVault, HTMX, Tailwind CSS, Stripe, Auth0
+                  Proxmox VE, Ollama, Portainer, OpenMediaVault, HTMX, Tailwind CSS, Stripe, Auth0, Computer Vision
                 </p>
               </div>
             </div>
@@ -356,9 +356,53 @@
               </ul>
             </div>
 
-            <!-- Cloud Cost Predictor (HackIllinois) -->
+            <!-- Red Lion Cam -->
             <div class="paper-card rotate-1 w-full relative group">
               <div class="tape-corner-tl"></div>
+
+              <div
+                class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 relative z-20 pt-4"
+              >
+                <h3 class="text-2xl font-bold">
+                  Red Lion Cam
+                </h3>
+                <span
+                  class="text-slate-500 font-bold italic mt-2 sm:mt-0 text-right"
+                  >Computer Vision, Python, Multi-threading, GPU Acceleration</span
+                >
+              </div>
+
+              <p class="mb-4 text-slate-600 italic">
+                Multi-threaded computer vision pipeline streaming live video
+                and dynamically translating patron counts into real-time
+                wait-time metrics.
+              </p>
+
+              <ul class="space-y-3 list-none pl-2 text-lg">
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Engineered a multi-threaded computer vision pipeline to
+                    ingest camera feeds, maintaining a 30 FPS zero-lag public
+                    video stream while asynchronously executing background
+                    person-detection inference.</span
+                  >
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3 text-slate-400 text-2xl">•</span>
+                  <span
+                    >Implemented adaptive dual-zone masking for variable
+                    lighting conditions and integrated hardware GPU
+                    acceleration, dynamically translating smoothed patron
+                    counts into real-time wait-time metrics.</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Cloud Cost Predictor (HackIllinois) -->
+            <div class="paper-card -rotate-1 w-full relative group">
+              <div class="tape scale-110"></div>
 
               <div
                 class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 relative z-20 pt-4"
@@ -402,8 +446,8 @@
             </div>
 
             <!-- LaundryLink -->
-            <div class="paper-card -rotate-1 w-full relative group">
-              <div class="tape scale-110"></div>
+            <div class="paper-card rotate-1 w-full relative group">
+              <div class="tape-corner-tr"></div>
 
               <div
                 class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 relative z-20 pt-4"
@@ -435,55 +479,9 @@
                   <span class="mr-3 text-slate-400 text-2xl">•</span>
                   <span
                     >Implemented Auth0 for user identity and Stripe for
-                    PCI-compliant checkout, packaging the environment with Docker
+                    secure checkout, packaging the environment with Docker
                     and Bash deployment scripts to reduce rollout time by
                     50%.</span
-                  >
-                </li>
-              </ul>
-            </div>
-
-            <!-- AI Socratic Tutor (Keywords AI Hackathon) -->
-            <div class="paper-card rotate-1 w-full relative group">
-              <div class="tape-corner-tr"></div>
-
-              <div
-                class="flex flex-col sm:flex-row sm:items-center justify-between mb-2 relative z-20 pt-4"
-              >
-                <h3 class="text-2xl font-bold">
-                  AI Socratic Tutor
-                  <span class="text-xl font-normal italic text-slate-600"
-                    >(Keywords AI Hackathon)</span
-                  >
-                </h3>
-                <span
-                  class="text-slate-500 font-bold italic mt-2 sm:mt-0 text-right"
-                  >LLMs, RAG, Search Indexes, Full-Stack</span
-                >
-              </div>
-
-              <p class="mb-4 text-slate-600 italic">
-                Full-stack tutoring system grounded on course materials with
-                high-throughput session auditing.
-              </p>
-
-              <ul class="space-y-3 list-none pl-2 text-lg">
-                <li class="flex items-start">
-                  <span class="mr-3 text-slate-400 text-2xl">•</span>
-                  <span
-                    >Engineered a full-stack tutoring system that ingested
-                    syllabi and lecture slides to ground LLM outputs, validating
-                    curriculum-accurate Socratic responses across 30+ benchmark
-                    prompts in live demos.</span
-                  >
-                </li>
-                <li class="flex items-start">
-                  <span class="mr-3 text-slate-400 text-2xl">•</span>
-                  <span
-                    >Designed high-throughput session logging with queryable
-                    search indexes, enabling educators to conduct sub-second
-                    interaction audits and detect student learning
-                    bottlenecks.</span
                   >
                 </li>
               </ul>
