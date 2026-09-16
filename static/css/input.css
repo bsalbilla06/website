@@ -56,3 +56,18 @@ html {
         border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
     }
 }
+
+@keyframes spin-record {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-record 4s linear infinite;
+    transform-origin: center;
+}
+
